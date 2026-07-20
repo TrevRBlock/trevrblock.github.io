@@ -35,11 +35,50 @@
         font-size: 38px;
       }
 
-      header p {
-        margin: 0;
-        color: #5c6470;
-        font-size: 17px;
-      }
+      .name {
+  margin: 0;
+  color: #20242a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.position {
+  margin: 5px 0 0;
+  color: #4e5662;
+  font-size: 17px;
+}
+
+.institution {
+  margin: 3px 0 30px;
+  color: #4e5662;
+  font-size: 17px;
+}
+
+.intro {
+  margin: 0;
+  color: #5c6470;
+  font-size: 17px;
+}
+    .app-category {
+  margin-top: 36px;
+}
+
+.category-title {
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #d9dde4;
+  color: #20242a;
+  font-size: 24px;
+}
+
+.empty-category {
+  margin: 0;
+  padding: 20px;
+  color: #7a828e;
+  background: #e9ecf1;
+  border-radius: 10px;
+  font-style: italic;
+}
 
       .app-grid {
         display: grid;
@@ -67,10 +106,10 @@
         box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
       }
 
-      .app-card h2 {
-        margin: 0 0 10px;
-        font-size: 21px;
-      }
+      .app-card h3 {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
 
       .app-card p {
         margin: 0;
@@ -83,23 +122,59 @@
   <body>
     <main>
       <header>
-        <h1>My Linguistics Apps</h1>
-        <p>Select an app to open it.</p>
-      </header>
+     <p class="name">Trevor Block</p>
+     <p class="position">Linguistics PhD (IP)</p>
+    <p class="institution">Simon Fraser University</p>
 
-      <section class="app-grid">
-        <a
-          class="app-card"
-          href="/ipa-feature-trainer/"
-        >
-          <h2>IPA Feature Trainer</h2>
+     <h1>Linguistics Apps</h1>
+    <p class="intro">Select an app to open it.</p>
+</header>
 
-          <p>
-            Practise distinctive features and place nodes
-            for English speech sounds.
-          </p>
-        </a>
-      </section>
+
+
+      <section class="app-category">
+  <h2 class="category-title">
+    Phonetics/Phonology
+  </h2>
+
+  <div class="app-grid">
+    <a
+      class="app-card"
+      href="/ipa-feature-trainer/"
+    >
+      <h3>IPA Feature Trainer</h3>
+
+      <p>
+        Practice distinctive features
+        for English speech sounds.
+      </p>
+    </a>
+  </div>
+</section>
+
+<section class="app-category">
+  <h2 class="category-title">
+    Morphology
+  </h2>
+
+  <div class="app-grid">
+    <p class="empty-category">
+      No apps available yet.
+    </p>
+  </div>
+</section>
+
+<section class="app-category">
+  <h2 class="category-title">
+    Syntax/Semantics
+  </h2>
+
+  <div class="app-grid">
+    <p class="empty-category">
+      No apps available yet.
+    </p>
+  </div>
+</section>
     </main>
   </body>
 </html>
